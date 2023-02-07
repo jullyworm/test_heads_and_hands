@@ -13,10 +13,10 @@ bool IsCorrect() {
 
 Player CreatePlayer() {
 	int i;
-	std::cout << "Åñëè õîòèòå ñàìè çàäàòü àòàêó, çàùèòó, çäîðîâüå è óðîí, íàïèøèòå 0, åñëè õîòèòå îñòàâèòü èõ ñëó÷àéíûìè, íàïèøèòå 1" << std::endl;
+	std::cout << "Ð•ÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐ°Ð¼Ð¸ Ð·Ð°Ð´Ð°Ñ‚ÑŒ Ð°Ñ‚Ð°ÐºÑƒ, Ð·Ð°Ñ‰Ð¸Ñ‚Ñƒ, Ð·Ð´Ð¾Ñ€Ð¾Ð²ÑŒÐµ Ð¸ ÑƒÑ€Ð¾Ð½, Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ 0, ÐµÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ÑŒ Ð¸Ñ… ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼Ð¸, Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ 1" << std::endl;
 	std::cin >> i;
 	while (!IsCorrect()) {
-		std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 		std::cin >> i;
 	}
 	std::cout << std::endl;
@@ -26,40 +26,40 @@ Player CreatePlayer() {
 	int minDmg;
 	int maxDmg;
 	if (i == 0) {
-		std::cout << "Àòàêà: ";
+		std::cout << "ÐÑ‚Ð°ÐºÐ°: ";
 		std::cin >> atk;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> atk;
 		}
-		std::cout << "Çàùèòà: ";
+		std::cout << "Ð—Ð°Ñ‰Ð¸Ñ‚Ð°: ";
 		std::cin >> def;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> def;
 		}
-		std::cout << "Çäîðîâüå: ";
+		std::cout << "Ð—Ð´Ð¾Ñ€Ð¾Ð²ÑŒÐµ: ";
 		std::cin >> HP;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> HP;
 		}
-		std::cout << "Ìèí. óðîí: ";
+		std::cout << "ÐœÐ¸Ð½. ÑƒÑ€Ð¾Ð½: ";
 		std::cin >> minDmg;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> minDmg;
 		}
-		std::cout << "Ìàêñ. óðîí: ";
+		std::cout << "ÐœÐ°ÐºÑ. ÑƒÑ€Ð¾Ð½: ";
 		std::cin >> maxDmg;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> maxDmg;
 		}
 		std::cout << std::endl;
 	}
 	else {
-		if (i != 1) std::cout << "Èãðàé íîðìàëüíî >:(" << std::endl;
+		if (i != 1) std::cout << "Ð˜Ð³Ñ€Ð°Ð¹ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 		atk = rand() % 20 + 1;
 		def = rand() % 20 + 1;
 		HP = rand() % 1000 + 1;
@@ -71,10 +71,10 @@ Player CreatePlayer() {
 
 Monster CreateMonster() {
 	int i;
-	std::cout << "Åñëè õîòèòå ñàìè çàäàòü àòàêó, çàùèòó, çäîðîâüå è óðîí, íàïèøèòå 0, åñëè õîòèòå îñòàâèòü èõ ñëó÷àéíûìè, íàïèøèòå 1" << std::endl;
+	std::cout << "Ð•ÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐ°Ð¼Ð¸ Ð·Ð°Ð´Ð°Ñ‚ÑŒ Ð°Ñ‚Ð°ÐºÑƒ, Ð·Ð°Ñ‰Ð¸Ñ‚Ñƒ, Ð·Ð´Ð¾Ñ€Ð¾Ð²ÑŒÐµ Ð¸ ÑƒÑ€Ð¾Ð½, Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ 0, ÐµÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ÑŒ Ð¸Ñ… ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼Ð¸, Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ 1" << std::endl;
 	std::cin >> i;
 	while (!IsCorrect()) {
-		std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 		std::cin >> i;
 	}
 	std::cout << std::endl;
@@ -84,40 +84,40 @@ Monster CreateMonster() {
 	int minDmg;
 	int maxDmg;
 	if (i == 0) {
-		std::cout << "Àòàêà: ";
+		std::cout << "ÐÑ‚Ð°ÐºÐ°: ";
 		std::cin >> atk;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> atk;
 		}
-		std::cout << "Çàùèòà: ";
+		std::cout << "Ð—Ð°Ñ‰Ð¸Ñ‚Ð°: ";
 		std::cin >> def;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> def;
 		}
-		std::cout << "Çäîðîâüå: ";
+		std::cout << "Ð—Ð´Ð¾Ñ€Ð¾Ð²ÑŒÐµ: ";
 		std::cin >> HP;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> HP;
 		}
-		std::cout << "Ìèí. óðîí: ";
+		std::cout << "ÐœÐ¸Ð½. ÑƒÑ€Ð¾Ð½: ";
 		std::cin >> minDmg;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> minDmg;
 		}
-		std::cout << "Ìàêñ. óðîí: ";
+		std::cout << "ÐœÐ°ÐºÑ. ÑƒÑ€Ð¾Ð½: ";
 		std::cin >> maxDmg;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> maxDmg;
 		}
 		std::cout << std::endl;
 	}
 	else {
-		if (i != 1) std::cout << "Èãðàé íîðìàëüíî >:(" << std::endl;
+		if (i != 1) std::cout << "Ð˜Ð³Ñ€Ð°Ð¹ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 		atk = rand() % 20 + 1;
 		def = rand() % 20 + 1;
 		HP = rand() % 1000 + 1;
@@ -128,31 +128,31 @@ Monster CreateMonster() {
 }
 
 void GetParam(Creature creature) {
-	std::cout << "Àòàêà " << creature.GetAttack() << ", çàùèòà " << creature.GetDefence() << ", çäîðîâüå " << creature.GetHP() << ", óðîí " << creature.GetMinDamage() << " - " << creature.GetMaxDamage() << std::endl;
+	std::cout << "ÐÑ‚Ð°ÐºÐ° " << creature.GetAttack() << ", Ð·Ð°Ñ‰Ð¸Ñ‚Ð° " << creature.GetDefence() << ", Ð·Ð´Ð¾Ñ€Ð¾Ð²ÑŒÐµ " << creature.GetHP() << ", ÑƒÑ€Ð¾Ð½ " << creature.GetMinDamage() << " - " << creature.GetMaxDamage() << std::endl;
 }
 
 void ActionPlayer(Player& player, Monster& monster) {
-	std::cout << "Õî÷åøü èñöåëèòüñÿ ïåðåä àòàêîé? 1 åñëè äà, 0 åñëè íåò" << std::endl;
+	std::cout << "Ð¥Ð¾Ñ‡ÐµÑˆÑŒ Ð¸ÑÑ†ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ð¿ÐµÑ€ÐµÐ´ Ð°Ñ‚Ð°ÐºÐ¾Ð¹? 1 ÐµÑÐ»Ð¸ Ð´Ð°, 0 ÐµÑÐ»Ð¸ Ð½ÐµÑ‚" << std::endl;
 	int i;
 	std::cin >> i;
 	while (!IsCorrect()) {
-		std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 		std::cin >> i;
 	}
 	std::cout << std::endl;
 	if (i) player.Cure();
-	std::cout << "Òû àòòàêóåøü ìîíñòðà" << std::endl;
+	std::cout << "Ð¢Ñ‹ Ð°Ñ‚Ñ‚Ð°ÐºÑƒÐµÑˆÑŒ Ð¼Ð¾Ð½ÑÑ‚Ñ€Ð°" << std::endl;
 	int damage = player.Attack(monster);
-	if (damage == 0) std::cout << "Òû ïðîìàõíóëñÿ" << std::endl;
-	else std::cout << "Òû íàíåñ "<< damage<<" óðîíà" << std::endl;
+	if (damage == 0) std::cout << "Ð¢Ñ‹ Ð¿Ñ€Ð¾Ð¼Ð°Ñ…Ð½ÑƒÐ»ÑÑ" << std::endl;
+	else std::cout << "Ð¢Ñ‹ Ð½Ð°Ð½ÐµÑ "<< damage<<" ÑƒÑ€Ð¾Ð½Ð°" << std::endl;
 	std::cout << std::endl;
 }
 
 void ActionMonster(Player& player, Monster& monster) {
-	std::cout << "Ìîíñòð àòòàêóåò" << std::endl;
+	std::cout << "ÐœÐ¾Ð½ÑÑ‚Ñ€ Ð°Ñ‚Ñ‚Ð°ÐºÑƒÐµÑ‚" << std::endl;
 	int damage = monster.Attack(player);
-	if (damage == 0) std::cout << "Ìîíñòð ïðîìàõíóëñÿ" << std::endl;
-	else std::cout << "Ìîíñòð íàíåñ " << damage << " óðîíà" << std::endl;
+	if (damage == 0) std::cout << "ÐœÐ¾Ð½ÑÑ‚Ñ€ Ð¿Ñ€Ð¾Ð¼Ð°Ñ…Ð½ÑƒÐ»ÑÑ" << std::endl;
+	else std::cout << "ÐœÐ¾Ð½ÑÑ‚Ñ€ Ð½Ð°Ð½ÐµÑ " << damage << " ÑƒÑ€Ð¾Ð½Ð°" << std::endl;
 	std::cout << std::endl;
 }
 
@@ -160,59 +160,59 @@ void ActionMonster(Player& player, Monster& monster) {
 
 int main() {
 	setlocale(LC_ALL, "Russian");
-	std::cout << "Ïðîâåðèì ðåàëèçàöèþ êëàññîâ äëÿ Èãðîêà è Ìîíñòðîâ. \n Ìû ñîçäàäèì Èãðîêà è ïàðó Ìîíñòðîâ è ïîïûòàåìñÿ èõ óáèòü." << std::endl;
-	std::cout << "Ñîçäàäèì èãðîêà" << std::endl;
+	std::cout << "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ð¼ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸ÑŽ ÐºÐ»Ð°ÑÑÐ¾Ð² Ð´Ð»Ñ Ð˜Ð³Ñ€Ð¾ÐºÐ° Ð¸ ÐœÐ¾Ð½ÑÑ‚Ñ€Ð¾Ð². \n ÐœÑ‹ ÑÐ¾Ð·Ð´Ð°Ð´Ð¸Ð¼ Ð˜Ð³Ñ€Ð¾ÐºÐ° Ð¸ Ð¿Ð°Ñ€Ñƒ ÐœÐ¾Ð½ÑÑ‚Ñ€Ð¾Ð² Ð¸ Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð°ÐµÐ¼ÑÑ Ð¸Ñ… ÑƒÐ±Ð¸Ñ‚ÑŒ." << std::endl;
+	std::cout << "Ð¡Ð¾Ð·Ð´Ð°Ð´Ð¸Ð¼ Ð¸Ð³Ñ€Ð¾ÐºÐ°" << std::endl;
 	Player player = CreatePlayer();
-	std::cout << "Ñîçäàí èãðîê" << std::endl;
+	std::cout << "Ð¡Ð¾Ð·Ð´Ð°Ð½ Ð¸Ð³Ñ€Ð¾Ðº" << std::endl;
 	GetParam(player);
 
-	std::cout << "Ñîçäàäèì 2õ ìîíñòðîâ" << std::endl;
+	std::cout << "Ð¡Ð¾Ð·Ð´Ð°Ð´Ð¸Ð¼ 2Ñ… Ð¼Ð¾Ð½ÑÑ‚Ñ€Ð¾Ð²" << std::endl;
 	Monster monster_1 = CreateMonster();
-	std::cout << "Ñîçäàí ïåðâûé ìîíñòð" << std::endl;
+	std::cout << "Ð¡Ð¾Ð·Ð´Ð°Ð½ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð¼Ð¾Ð½ÑÑ‚Ñ€" << std::endl;
 	GetParam(monster_1);
 	Monster monster_2 = CreateMonster();
-	std::cout << "Ñîçäàí âòîðîé ìîíñòð" << std::endl;
+	std::cout << "Ð¡Ð¾Ð·Ð´Ð°Ð½ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð¾Ð½ÑÑ‚Ñ€" << std::endl;
 	GetParam(monster_2);
 
 	int counterMonsters = 2;
 
 	while (!player.IsDead() && (counterMonsters != 0)) {
 		if (counterMonsters == 1) {
-			std::cout << "Àòòàêóåì âòîðîãî ìîíñòðà!" << std::endl;
+			std::cout << "ÐÑ‚Ñ‚Ð°ÐºÑƒÐµÐ¼ Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð¼Ð¾Ð½ÑÑ‚Ñ€Ð°!" << std::endl;
 			ActionPlayer(player, monster_2);
 			if (monster_2.IsDead()) {
 				--counterMonsters;
-				std::cout << "Âòîðîé ìîíñòð ìåðòâ!" << std::endl;
+				std::cout << "Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð¾Ð½ÑÑ‚Ñ€ Ð¼ÐµÑ€Ñ‚Ð²!" << std::endl;
 			}
 			else ActionMonster(player, monster_2);
 		}
 		if (counterMonsters == 2) {
-			std::cout << "Àòòàêóåì ïåðâîãî ìîíñòðà!" << std::endl;
+			std::cout << "ÐÑ‚Ñ‚Ð°ÐºÑƒÐµÐ¼ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ Ð¼Ð¾Ð½ÑÑ‚Ñ€Ð°!" << std::endl;
 			ActionPlayer(player, monster_1);
 			if (monster_1.IsDead()) {
 				--counterMonsters;
-				std::cout << "Ïåðâûé ìîíñòð ìåðòâ!" << std::endl;
+				std::cout << "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð¼Ð¾Ð½ÑÑ‚Ñ€ Ð¼ÐµÑ€Ñ‚Ð²!" << std::endl;
 			}
 			else ActionMonster(player, monster_1);
 		}
 		if (player.IsDead()) {
-			std::cout << "Èãðîê ìåðòâ!" << std::endl;
+			std::cout << "Ð˜Ð³Ñ€Ð¾Ðº Ð¼ÐµÑ€Ñ‚Ð²!" << std::endl;
 		}
 	}
 
 	if (!player.IsDead()) {
-		std::cout << "Âñå ìîíñòðû óæå ïåðåïëûëè ïî ðåêå Ñòèêñ, æåëàåòå ê íèì ïðèñîåäèíèòüñÿ? Íàïèøèòå 1, åñëè õîòèòå îòïðàâèòüñÿ â ïóòåøåñòâèå ïî ðåêå Ñòèêñ, èëè 0, åñëè íå õîòèòå" << std::endl;
+		std::cout << "Ð’ÑÐµ Ð¼Ð¾Ð½ÑÑ‚Ñ€Ñ‹ ÑƒÐ¶Ðµ Ð¿ÐµÑ€ÐµÐ¿Ð»Ñ‹Ð»Ð¸ Ð¿Ð¾ Ñ€ÐµÐºÐµ Ð¡Ñ‚Ð¸ÐºÑ, Ð¶ÐµÐ»Ð°ÐµÑ‚Ðµ Ðº Ð½Ð¸Ð¼ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ? ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ 1, ÐµÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒÑÑ Ð² Ð¿ÑƒÑ‚ÐµÑˆÐµÑÑ‚Ð²Ð¸Ðµ Ð¿Ð¾ Ñ€ÐµÐºÐµ Ð¡Ñ‚Ð¸ÐºÑ, Ð¸Ð»Ð¸ 0, ÐµÑÐ»Ð¸ Ð½Ðµ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ" << std::endl;
 		int i;
 		std::cin >> i;
 		while (!IsCorrect()) {
-			std::cout << "Ââåäèòå íîðìàëüíî >:(" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾ >:(" << std::endl;
 			std::cin >> i;
 		}
 		std::cout << std::endl;
-		if (!i) std::cout << "Âû ïðîøëè èãðó, ïîçäðàâëÿþ!" << std::endl;
+		if (!i) std::cout << "Ð’Ñ‹ Ð¿Ñ€Ð¾ÑˆÐ»Ð¸ Ð¸Ð³Ñ€Ñƒ, Ð¿Ð¾Ð·Ð´Ñ€Ð°Ð²Ð»ÑÑŽ!" << std::endl;
 		else {
 			while (!player.IsDead()) player.Attack(player);
-			std::cout << "Âû óìåðëè, ïîçäðàâëÿþ!" << std::endl;
+			std::cout << "Ð’Ñ‹ ÑƒÐ¼ÐµÑ€Ð»Ð¸, Ð¿Ð¾Ð·Ð´Ñ€Ð°Ð²Ð»ÑÑŽ!" << std::endl;
 		}
 	}
 	std::system("pause");
